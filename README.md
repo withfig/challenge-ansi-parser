@@ -43,7 +43,7 @@ When you're ready to submit, please create a zip file of the items below:
 - README.md
 - All code for the project
 
-If you are stuck on something, please reach out to use!
+If you are stuck on something, please reach out to us!
 
 You get no points for guessing. We want you to succeed. Our guess is the first part of the project will be the most challenging. Again, if you are stuck, please get in touch!
 
