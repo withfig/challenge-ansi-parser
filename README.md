@@ -4,9 +4,9 @@ For this challenge, you will write a program that parses specific ANSI escape co
 
 The ANSI escape code that you should implement are the following, any other escape codes should be ignored and passed through to the output.
 
-- `ESC]123;PWD;BEL` - The current working directory should be saved
+- `ESC[123;PWD;BEL` - The current working directory should be saved
 to the file.
-- `ESC]123;PRINT_ENV=<ENV>;BEL` - The value of the environment variable
+- `ESC[123;PRINT_ENV=<ENV>;BEL` - The value of the environment variable
 `<ENV>` should be saved to the file. For example `PRINT_ENV=HOME` should
 save the value of `HOME` to the file.
 
@@ -20,13 +20,13 @@ Example of input and output when running with an argument of `file.txt`
 Input to `stdin`:
 
 ```
-Hello, world!ESC]123;PWD;BEL More Text. ESC]123;PRINT_ENV=SHELL;BEL ESC]234;NO_OP;BEL Goodbye!
+Hello, world!ESC[123;PWD;BEL More Text. ESC[123;PRINT_ENV=SHELL;BEL ESC[234;NO_OP;BEL Goodbye!
 ```
 
 Output to `stdout`:
 
 ```
-Hello, world! More Text. ESC]234;NO_OP;BEL Goodbye!
+Hello, world! More Text. ESC[234;NO_OP;BEL Goodbye!
 ```
 
 Output to `file.txt`:
